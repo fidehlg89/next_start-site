@@ -5,12 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import ServicesMenu from "./ServicesMenu";
+import ScheduleButton from "./ScheduleButton";
 
 const Navbar: React.FC = () => {
   const pathname = usePathname();
-
-  console.log(pathname);
-
   return (
     <nav className="flex justify-between items-center px-[40px] py-[6px]uppercase text-[20px] h-32 uppercase">
       <Image
@@ -57,12 +55,7 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
 
-        <Link
-          href="/contact"
-          className="whitespace-nowrap border border-[#b7ddcd] bg-transparent text-[#464a4d] px-6 py-4 hover:bg-white transition duration-300"
-        >
-          SCHEDULE A CONSULTATION
-        </Link>
+        <ScheduleButton/>
       </div>
     </nav>
   );

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const jost = Jost({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,10 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-cover bg-no-repeat ${inter.className}`} style={{ backgroundImage: "url('assets/pngwing-1920w.webp')" }}>
+      <body className={`bg-cover bg-no-repeat ${jost.className}`} style={{ backgroundImage: "url('assets/pngwing-1920w.webp')" }}>
         <Header />
         {children}
       </body>
     </html>
   );
 }
+function Jots(arg0: { subsets: string[]; }) {
+  throw new Error("Function not implemented.");
+}
+

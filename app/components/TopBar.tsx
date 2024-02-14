@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const TopBar: React.FC = () => {
   return (
-    <div className="bg-[#464a4d] text-[22px] px-[40px] py-[6px]">
-      <div className="flex justify-evenly items-center">
+    <div className="bg-[#464a4d] text-white text-[16px] px-[40px] py-[6px]">
+      <div className="flex justify-between items-center">
         <span className="my-2">Serving Hillsborough, Pinellas, and Pasco County</span>
         <div className="flex items-center space-x-4">
           <Link href="tel:+17272383241" className="flex items-center space-x-1">
